@@ -1,6 +1,6 @@
 import pkg from 'package.json';
 
-const rootUrl = process.env.NEXT_PUBLIC_DOMAIN;
+const rootUrl = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_DOMAIN;
 const name = 'CQT';
 
 const appData = {
