@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/components/*": ["src/components/*"],
+            "@/styles/*": ["src/styles/*"],
+            "@/interfaces/*": ["src/interfaces/*"],
+            "@/assets/*": ["src/assets/*"],
+            "@/images/*": ["src/images/*"],
+            "@/data/*": ["src/data/*"],
+            "@/stores/*": ["src/stores/*"],
+            "@/utils/*": ["src/utils/*"],
+            "@/models/*": ["src/models/*"],
+            "@/src/*": ["src/*"]
+        },
+        "target": "es5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true
+    },
+    "exclude": ["node_modules"],
+    "include": [
+        "next-env.d.ts",
+        "custom.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/components/home/testimonials.jsx"
+    ]
+}
