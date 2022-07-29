@@ -2,12 +2,13 @@ import Sutton from '@/assets/images/logos/Sutton.png';
 import Courses from '@/components/Courses';
 import { Hero } from '@/components/Hero';
 import { Testimonial } from '@/components/Testimonial';
+import Testimonials from '@/components/Testimonials';
 
 const Index = () => (
     <>
         <Hero />
         <Testimonial
-            id='tommy-stroman-testimonial-1'
+            id='london-borough-sutton-council-hero'
             author={{
                 name: 'London Borough Sutton Council',
                 role: 'Social Worker',
@@ -21,6 +22,7 @@ const Index = () => (
             </p>
         </Testimonial>
         <Courses />
+        <Testimonials />
     </>
 );
 

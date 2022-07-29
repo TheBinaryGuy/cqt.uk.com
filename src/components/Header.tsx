@@ -55,7 +55,7 @@ const MobileNavigation = () => (
                             className='absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl bg-white p-6 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5'>
                             <li>
                                 <Link
-                                    href='#courses'
+                                    href='/courses'
                                     className='block w-full'
                                     onClick={() => close()}>
                                     Courses
@@ -63,7 +63,7 @@ const MobileNavigation = () => (
                             </li>
                             <li>
                                 <Link
-                                    href='#testimonials'
+                                    href='/testimonials'
                                     className='block w-full'
                                     onClick={() => close()}>
                                     Testimonials
@@ -98,14 +98,14 @@ export const Header = () => (
                     </li>
                     <li className='ml-12 hidden md:block'>
                         <Link
-                            href='#courses'
+                            href='/courses'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
                             Courses
                         </Link>
                     </li>
                     <li className='ml-6 hidden md:block'>
                         <Link
-                            href='#testimonials'
+                            href='/testimonials'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
                             Testimonials
                         </Link>

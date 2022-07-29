@@ -17,9 +17,9 @@ export const Testimonial: React.FC<{
         id={id}
         aria-labelledby={`${id}-title`}
         className='relative bg-slate-100 py-16 sm:py-32'>
-        <h3 id={`${id}-title`} className='sr-only'>
+        <h2 id={`${id}-title`} className='sr-only'>
             Testimonial of {author.name}
-        </h3>
+        </h2>
         <div className='text-slate-900/10'>
             <GridPattern x='50%' patternTransform='translate(0 80)' />
         </div>

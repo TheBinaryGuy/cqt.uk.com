@@ -1,6 +1,8 @@
 import pkg from 'package.json';
 
-const rootUrl = process.env.VERCEL_URL || process.env.NEXT_PUBLIC_DOMAIN;
+const rootUrl = process.env.NEXT_PUBLIC_USE_VERCEL_URL
+    ? process.env.VERCEL_URL
+    : process.env.NEXT_PUBLIC_DOMAIN;
 const name = 'CQT';
 
 const appData = {
@@ -13,7 +15,7 @@ const appData = {
     rootUrl,
     logo: `https://${rootUrl}/logo.png`,
     ogImg: `https://${rootUrl}/og-image.png`,
-    globalCTA: 'https://rebrand.ly/cmsdemo',
+    globalCTA: 'https://calendly.com/',
     themeColor: '#50A555',
 };
 

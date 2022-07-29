@@ -5,7 +5,9 @@ const nextConfig = {
         domains: [
             'www.cqt.uk.com',
             'cqt.uk.com',
-            process.env.VERCEL_URL || process.env.NEXT_PUBLIC_DOMAIN,
+            process.env.NEXT_PUBLIC_USE_VERCEL_URL
+                ? process.env.VERCEL_URL
+                : process.env.NEXT_PUBLIC_DOMAIN,
         ],
         formats: ['image/avif', 'image/webp'],
     },
