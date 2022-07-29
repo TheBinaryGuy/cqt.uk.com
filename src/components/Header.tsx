@@ -77,6 +77,14 @@ const MobileNavigation = () => (
                                     About
                                 </Link>
                             </li>
+                            <li>
+                                <Link
+                                    href='/contact'
+                                    className='block w-full'
+                                    onClick={() => close()}>
+                                    Contact
+                                </Link>
+                            </li>
                         </Popover.Panel>
                     </Transition.Child>
                 </Transition.Root>
@@ -115,6 +123,13 @@ export const Header = () => (
                             href='/about'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
                             About
+                        </Link>
+                    </li>
+                    <li className='ml-6 hidden md:block'>
+                        <Link
+                            href='/contact'
+                            className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
+                            Contact
                         </Link>
                     </li>
                     <li className='ml-auto'>

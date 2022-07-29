@@ -29,6 +29,13 @@ export const Footer = () => (
                                 About
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                href='/about'
+                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

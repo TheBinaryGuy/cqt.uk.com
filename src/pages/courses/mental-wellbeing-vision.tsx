@@ -92,7 +92,7 @@ const MentalWellbeingVision = () => (
                         </div>
                         <div className='ml-4 rounded-md shadow'>
                             <Link
-                                href='#'
+                                href='/contact'
                                 className='flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-primary hover:bg-gray-50'>
                                 Contact Us
                             </Link>

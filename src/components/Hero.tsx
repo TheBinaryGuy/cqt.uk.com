@@ -34,6 +34,11 @@ export const Hero = () => (
                 href='/courses'>
                 Browse Courses
             </Link>
+            <Link
+                className='group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm text-slate-700 ring-1 ring-slate-200 hover:text-slate-900 hover:ring-slate-300 focus:outline-none focus-visible:outline-blue-600 focus-visible:ring-slate-300 active:bg-slate-100 active:text-slate-600'
+                href='/contact'>
+                Contact Us
+            </Link>
         </div>
         <div className='mt-36 lg:mt-44'>
             <p className='font-display text-base text-slate-900'>Trusted by:</p>
