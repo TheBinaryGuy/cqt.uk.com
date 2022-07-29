@@ -147,10 +147,10 @@ const Courses = () => (
         </div>
         <div className='mx-auto mt-16 space-y-4 px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-7xl lg:px-8'>
             <div className='flex items-center gap-5'>
-                <h3 className='font-display flex-grow-0 text-3xl'>
-                    Mental Health Training
+                <h3 className='font-display border-b border-b-primary text-2xl sm:flex-grow-0 sm:border-0 sm:text-3xl'>
+                    Mental Health
                 </h3>
-                <div className='h-0.5 flex-grow rounded-full bg-primary' />
+                <div className='hidden h-0.5 flex-grow rounded-full bg-primary sm:block' />
             </div>
             <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
                 {mentalHealthTraining.map(course => (
@@ -172,9 +172,9 @@ const Courses = () => (
         </div>
         <div className='mx-auto mt-16 space-y-4 px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-7xl lg:px-8'>
             <div className='flex items-center gap-5'>
-                <div className='h-0.5 flex-grow rounded-full bg-primary' />
-                <h3 className='font-display flex-grow-0 text-3xl'>
-                    Physical Intervention Training
+                <div className='hidden h-0.5 flex-grow rounded-full bg-primary sm:block' />
+                <h3 className='font-display border-b border-b-primary text-2xl sm:flex-grow-0 sm:border-0 sm:text-3xl'>
+                    Physical Intervention
                 </h3>
             </div>
             <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
@@ -197,10 +197,10 @@ const Courses = () => (
         </div>
         <div className='mx-auto mt-16 space-y-4 px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-7xl lg:px-8'>
             <div className='flex items-center gap-5'>
-                <h3 className='font-display flex-grow-0 text-3xl'>
-                    Health And Safety Training
+                <h3 className='font-display border-b border-b-primary text-2xl sm:flex-grow-0 sm:border-0 sm:text-3xl'>
+                    Health And Safety
                 </h3>
-                <div className='h-0.5 flex-grow rounded-full bg-primary' />
+                <div className='hidden h-0.5 flex-grow rounded-full bg-primary sm:block' />
             </div>
             <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
                 {healthAndSafetyTraining.map(course => (
