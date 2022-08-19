@@ -11,6 +11,7 @@
             "@/stores/*": ["src/stores/*"],
             "@/utils/*": ["src/utils/*"],
             "@/models/*": ["src/models/*"],
+            "@/schemas/*": ["src/schemas/*"],
             "@/src/*": ["src/*"]
         },
         "target": "es5",

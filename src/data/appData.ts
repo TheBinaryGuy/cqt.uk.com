@@ -13,7 +13,7 @@ const appData = {
     rootUrl,
     logo: `https://${rootUrl}/logo.png`,
     ogImg: `https://${rootUrl}/og-image.png`,
-    globalCTA: 'https://calendly.com/',
+    globalCTA: 'https://cqt.simplybook.me/v2/#book/service/',
     themeColor: '#50A555',
 };
 

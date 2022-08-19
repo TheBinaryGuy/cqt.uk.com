@@ -8,7 +8,7 @@ import PrimeLife from '@/assets/images/logos/PrimeLife.png';
 import Sutton from '@/assets/images/logos/Sutton.png';
 
 type Author = {
-    name: string;
+    name: string | null;
     role: string | null;
     image: StaticImageData | string;
 };
@@ -24,8 +24,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I now have a greater understanding of some of the mental health triggers. I will be more aware of the mental health issues that some people are suffering with. I am now able to handle difficult situations.',
             author: {
-                name: 'Prime-Life',
-                role: 'Care Worker',
+                name: 'Care Worker',
+                role: 'Prime-Life',
                 image: PrimeLife,
             },
         },
@@ -33,8 +33,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'Mental Health course given me more insight into a presenting problem that will enable me to signpost the young person to the right service if required.',
             author: {
-                name: 'London Borough Sutton Council',
-                role: 'Manager',
+                name: 'Manager',
+                role: 'London Borough Sutton Council',
                 image: Sutton,
             },
         },
@@ -42,8 +42,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I really enjoyed the mental health first aid training; it was sensitively and well delivered an excellent day delivering a difficult subject. Thank you!',
             author: {
-                name: 'KAM Project Consultants',
-                role: null,
+                name: 'Manager',
+                role: 'KAM Project Consultants',
                 image: KAMPC,
             },
         },
@@ -62,8 +62,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I found the mental wellbeing training very sobering, insightful and interactive. Presentations were interesting with some good slides and videos that kept us all engaged. A real eye-opener for us all.',
             author: {
-                name: 'KAM Project Consultants',
-                role: null,
+                name: 'Associate',
+                role: 'KAM Project Consultants',
                 image: KAMPC,
             },
         },
@@ -71,8 +71,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I would recommend the course as it provides good information about how to manage patients who are aggressive both physically and verbally.',
             author: {
-                name: 'The Orders of St John Care Trust (OSJCT)',
-                role: null,
+                name: 'Care Worker',
+                role: 'The Orders of St John Care Trust (OSJCT)',
                 image: OSJCT,
             },
         },
@@ -82,8 +82,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'Brian was a very engaging trainer and covered a whole suite of topics. I think it would be a good idea to refresh this in 12 months.',
             author: {
-                name: 'KAM Project Consultants',
-                role: null,
+                name: 'Manager',
+                role: 'KAM Project Consultants',
                 image: KAMPC,
             },
         },
@@ -91,8 +91,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I feel better equipped to manage difficult situations after completing the course. Thank you CQT',
             author: {
-                name: 'The Orders of St John Care Trust (OSJCT)',
-                role: null,
+                name: 'Care Worker',
+                role: 'The Orders of St John Care Trust (OSJCT)',
                 image: OSJCT,
             },
         },
@@ -100,8 +100,8 @@ const testimonials: Testimonial[][] = [
             content:
                 'I found the Mental Health First Aid course very informative with a very knowledgeable trainer who goes that extra mile. There were many elements of the training which will help me support people at work and socially so thank you Brian.',
             author: {
-                name: 'KAM Project Consultants',
-                role: null,
+                name: 'Associate',
+                role: 'KAM Project Consultants',
                 image: KAMPC,
             },
         },
@@ -124,7 +124,7 @@ const Testimonial = ({
             </blockquote>
             <figcaption className='mt-6 flex items-center'>
                 <div className='relative flex aspect-[2/1] w-24 items-center justify-center overflow-hidden rounded-full'>
-                    <Image src={author.image} alt='' />
+                    <Image src={author.image} alt={author.name ?? ''} />
                 </div>
                 <div className='ml-4'>
                     <div className='text-base font-medium leading-6 tracking-tight text-slate-900'>
