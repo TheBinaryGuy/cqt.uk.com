@@ -3,55 +3,63 @@ import CourseCTA from '@/components/CourseCTA';
 import CourseHeader from '@/components/CourseHeader';
 import CourseTestimonial from '@/components/CourseTestimonial';
 
-const ConflictResolutionTraining = () => (
+const BreakawaySkills = () => (
     <div className='overflow-hidden bg-gray-50 py-16'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
             <CourseHeader
                 category='Health And Safety'
-                title='Conflict Resolution Training'
+                title='Breakaway Skills'
             />
             <div className='lg:grid lg:grid-cols-2 lg:items-start lg:gap-8'>
                 <div className='relative z-10'>
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This course deals with the key principles in
-                            Conflict Resolution and participants will understand
-                            how to recognise various aspects of conflict and to
-                            explore and understand different methods and
-                            techniques to effectively manage and resolve
-                            conflict situations.
+                            This one-day training programme follows the
+                            Restraint Reduction Network (RRN) Training
+                            Standards. It equips course participants to safely
+                            breakaway from people who are disruptive and
+                            challenging. The course teaches people to focus on
+                            least restrictive practices and promotes positive
+                            and proactive communication to manage and
+                            de-escalate difficult situations, with an emphasis
+                            on any physical intervention skills taught, to be
+                            used as a last resort. (Positive and Proactive care
+                            DOH 2014).
                         </p>
 
                         <hr />
 
                         <h2>Target Group</h2>
                         <p>
-                            This course is designed for all people who may come
-                            into contact with individuals exhibiting verbal or
-                            physical aggressive behaviours.
+                            This course is designed for Health, Social Care and
+                            Council staff, Care Home staff, Independent and
+                            Voluntary Organisations, Dental staff, Staff working
+                            in Head/Brain Injury units, Security and Facilities
+                            staff working across statutory organisations, Staff
+                            working in GP surgeries, Schools/Academies,
+                            Colleges, Universities and Community settings.
                         </p>
 
                         <hr />
                         <h2>Learning Outcomes</h2>
                         <ul>
                             <li>
-                                Describe common causes of conflict and the
-                                communication models, which can help in conflict
-                                resolution
-                            </li>
-                            <li>Explain different warning and danger signs</li>
-                            <li>
-                                Describe and demonstrate aspects of non-verbal
-                                de-escalation, verbal strategies and conflict
-                                resolution styles
+                                The skills required to deal with face-to-face
+                                aggression
                             </li>
                             <li>
-                                Describe individual and organisational
-                                responsibilities in relation to legal, ethical
-                                and moral frame works regarding the use of
-                                reasonable force in relation to conflict
-                                resolution
+                                Techniques, knowledge and the confidence to
+                                escape from threatening situations
+                            </li>
+                            <li>
+                                Developed an awareness of relevant law including
+                                the use of reasonable force
+                            </li>
+                            <li>
+                                Considered risks and the organisations and
+                                individual&apos;s responsibilities around
+                                policies and procedures
                             </li>
                         </ul>
 
@@ -63,8 +71,7 @@ const ConflictResolutionTraining = () => (
                             </span>
                         </h3>
                         <h3>
-                            Duration:{' '}
-                            <span className='font-normal'>0.5 Day</span>
+                            Duration: <span className='font-normal'>1 Day</span>
                         </h3>
                         <h3>
                             Refresher Course:{' '}
@@ -91,7 +98,6 @@ const ConflictResolutionTraining = () => (
     </div>
 );
 
-ConflictResolutionTraining.pageTitle =
-    'Working with Young People who Self Harm Training';
+BreakawaySkills.pageTitle = 'Breakaway Skills';
 
-export default ConflictResolutionTraining;
+export default BreakawaySkills;

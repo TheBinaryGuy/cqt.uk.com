@@ -14,7 +14,12 @@ const FirstAidForMentalHealthConstruction = () => (
                 <div className='relative z-10'>
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
-                        <p>TBD</p>
+                        <p>
+                            This course is designed specifically for people
+                            working in construction to increase their knowledge
+                            of mental health problems and/or become a Mental
+                            Health First Aider in their workplace.
+                        </p>
 
                         <hr />
 

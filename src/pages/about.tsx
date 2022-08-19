@@ -79,27 +79,6 @@ const About = () => (
                         short-written assessment.
                     </p>
                 </div>
-                <div>
-                    <h4>Construction</h4>
-                    <p>
-                        This course is designed specifically for people working
-                        in construction to increase their knowledge of mental
-                        health problems and/or become a Mental Health First
-                        Aider in their workplace.
-                    </p>
-                </div>
-                <div>
-                    <h4>
-                        Education (Universities, Colleges, Academies and
-                        Schools)
-                    </h4>
-                    <p>
-                        This course is designed specifically for employees
-                        working in an education setting wanting to increase
-                        their knowledge of mental health problems and/or become
-                        a Mental Health First Aider in their workplace.
-                    </p>
-                </div>
             </div>
         </section>
     </div>

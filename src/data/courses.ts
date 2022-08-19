@@ -39,29 +39,25 @@ const mentalHealth: Course[] = [
     },
     {
         title: 'First Aid for Mental Health Young People',
-        description:
-            'This online training course follows the curriculum commissioned by the Department of Health and developed in collaboration by Skills for Health and Health Education England (HEE) in partnership with Skills for Care.',
+        description: 'TBD',
         image: 'https://dummyimage.com/800x450/000/aaa',
         href: '/courses/first-aid-for-mental-health-young-people',
     },
     {
         title: 'First Aid for Mental Health Online',
-        description:
-            'This online training course follows the curriculum commissioned by the Department of Health and developed in collaboration by Skills for Health and Health Education England (HEE) in partnership with Skills for Care.',
+        description: 'TBD',
         image: 'https://dummyimage.com/800x450/000/aaa',
         href: '/courses/first-aid-for-mental-health-online',
     },
     {
         title: 'First Aid for Mental Health Universities and Schools',
-        description:
-            'This online training course follows the curriculum commissioned by the Department of Health and developed in collaboration by Skills for Health and Health Education England (HEE) in partnership with Skills for Care.',
+        description: 'TBD',
         image: 'https://dummyimage.com/800x450/000/aaa',
         href: '/courses/first-aid-for-mental-health-universities-and-schools',
     },
     {
         title: 'First Aid for Mental Health Construction',
-        description:
-            'This online training course follows the curriculum commissioned by the Department of Health and developed in collaboration by Skills for Health and Health Education England (HEE) in partnership with Skills for Care.',
+        description: 'TBD',
         image: 'https://dummyimage.com/800x450/000/aaa',
         href: '/courses/first-aid-for-mental-health-construction',
     },
