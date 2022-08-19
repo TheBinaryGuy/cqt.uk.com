@@ -40,7 +40,7 @@ const UnderstandingTheImpactOfAbuseAndTraumaOnTheDevelopingChild = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>
                                 Developed an awareness of how abuse, neglect and
                                 trauma can impact on a child&apos;s development

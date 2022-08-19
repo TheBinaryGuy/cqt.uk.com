@@ -23,7 +23,7 @@ const FirstAidForMentalHealthOnline = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>TBD</li>
                         </ul>
 

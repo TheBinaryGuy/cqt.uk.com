@@ -42,7 +42,7 @@ const WorkingWithYoungPeopleWhoSelfHarmTraining = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>Describe what self-harm is</li>
                             <li>
                                 Describe the individual and environmental

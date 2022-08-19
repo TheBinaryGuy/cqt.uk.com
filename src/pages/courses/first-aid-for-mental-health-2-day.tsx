@@ -67,7 +67,7 @@ const FirstAidForMentalHealth2Day = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>Impact of Mental Health issues</li>
                             <li>Stigma and discrimination</li>
                             <li>First Aid For Mental Health Action Plan</li>

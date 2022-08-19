@@ -43,7 +43,7 @@ const BreakawaySkills = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>
                                 The skills required to deal with face-to-face
                                 aggression

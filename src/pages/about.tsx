@@ -55,7 +55,7 @@ const About = () => (
                         To be awarded the Level 2 qualification, all
                         participants must pass the below assessments
                     </h4>
-                    <ul>
+                    <ul className='marker:text-black'>
                         <li>One multiple-choice question paper.</li>
                         <li>A practical assessment.</li>
                     </ul>
@@ -65,7 +65,7 @@ const About = () => (
                         To be awarded the Level 3 qualification, all delegates
                         must pass the below assessments
                     </h4>
-                    <ul>
+                    <ul className='marker:text-black'>
                         <li>Two multiple-choice question papers.</li>
                         <li>A practical assessment.</li>
                     </ul>

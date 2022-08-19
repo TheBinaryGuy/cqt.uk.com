@@ -40,7 +40,7 @@ const AttachmentAndResilienceTraining = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>
                                 An understanding of what attachment is and how
                                 neglect and abuse can impact on its healthy

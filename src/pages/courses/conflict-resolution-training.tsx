@@ -34,7 +34,7 @@ const ConflictResolutionTraining = () => (
 
                         <hr />
                         <h2>Learning Outcomes</h2>
-                        <ul>
+                        <ul className='marker:text-black'>
                             <li>
                                 Describe common causes of conflict and the
                                 communication models, which can help in conflict
