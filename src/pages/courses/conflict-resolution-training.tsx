@@ -63,8 +63,7 @@ const ConflictResolutionTraining = () => (
                             </span>
                         </h3>
                         <h3>
-                            Duration:{' '}
-                            <span className='font-normal'>0.5 Day</span>
+                            Duration: <span className='font-normal'>1 Day</span>
                         </h3>
                         <h3>
                             Refresher Course:{' '}
