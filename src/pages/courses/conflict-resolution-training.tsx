@@ -1,4 +1,4 @@
-import KAMPC from '@/assets/images/logos/KAM-Project-Consultants.png';
+import PrimeLife from '@/assets/images/logos/PrimeLife.png';
 import CourseCTA from '@/components/CourseCTA';
 import CourseHeader from '@/components/CourseHeader';
 import CourseTestimonial from '@/components/CourseTestimonial';
@@ -74,16 +74,11 @@ const ConflictResolutionTraining = () => (
                 </div>
                 <CourseTestimonial
                     author={{
-                        image: KAMPC,
-                        name: 'KAM Project Consultants',
-                        role: 'Associate',
+                        image: PrimeLife,
+                        name: 'Prime-Life',
+                        role: 'Care Worker',
                     }}
-                    content='I found the Mental Health First Aid course
-                very informative with a very knowledgeable
-                trainer who goes that extra mile. There were
-                many elements of the training which will
-                help me support people at work and socially
-                so thank you Brian.'
+                    content='I now have a greater understanding of some of the mental health triggers. I will be more aware of the mental health issues that some people are suffering with. I am now able to handle difficult situations.'
                 />
             </div>
         </div>

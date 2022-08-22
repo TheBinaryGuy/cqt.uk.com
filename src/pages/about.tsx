@@ -11,21 +11,28 @@ const About = () => (
                     About
                 </h2>
             </div>
-            <p className='prose prose-lg mx-auto mt-16'>
-                CQT is led by its Founder and Director, Brian Bowlay-Williams
-                who is known for his knowledge and expertise in Mental Health
-                and Mental Health First Aid having directed learning and
-                innovation in this field over the last decade whilst supporting
-                the Care Quality Commission as a Specialist Advisor for mental
-                health Our vision is to promote mental health in a positive
-                light and to help eradicate the stigma that surrounds mental
-                illness. We believe that the mental health needs of all
-                individuals should be treated with equal importance and be
-                supported in the same way people do about their physical health
-                needs. All too often people living with mental health problems
-                still experience stigma and discrimination, many people struggle
-                to get the right help at the right time.
-            </p>
+            <div className='prose prose-lg mx-auto mt-16'>
+                <p>
+                    CQT is managed by its Founder and Director, Brian
+                    Bowlay-Williams who is known for his knowledge and expertise
+                    in Mental Health having directed learning and innovation in
+                    this field whilst supporting the Care Quality Commission
+                    (CQC) as a Specialist Advisor over the last decade.
+                </p>
+                <p>
+                    Brian&apos;s vision is to promote mental health in a
+                    positive light and to help eradicate the stigma that
+                    surrounds mental illness. As a company CQT believe that the
+                    mental health needs of all individuals should be treated
+                    with equal importance and be supported in the same way
+                    people do about their physical health needs. Hence
+                    Brian&apos;s drive to resolutely promote First Aid in Mental
+                    Health far and wide; because all too often people living
+                    with mental health problems still experience stigma and
+                    discrimination, many people struggle to get the right help
+                    at the right time.
+                </p>
+            </div>
         </section>
 
         <section

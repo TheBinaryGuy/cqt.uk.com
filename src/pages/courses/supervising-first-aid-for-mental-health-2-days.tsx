@@ -4,31 +4,41 @@ import CourseHeader from '@/components/CourseHeader';
 import CourseNote from '@/components/CourseNote';
 import CourseTestimonial from '@/components/CourseTestimonial';
 
-const MentalHealth1Day = () => (
+const MentalHealth2Days = () => (
     <div className='overflow-hidden bg-gray-50 py-16'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
             <CourseHeader
                 category='First Aid for Mental Health'
-                title='First Aid for Mental Health 1-Day (RQF Level 2 Award)'
+                title='Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)'
             />
             <div className='lg:grid lg:grid-cols-2 lg:items-start lg:gap-8'>
                 <div className='relative z-10'>
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This one-day course available face-to-face or online
-                            is accompanied by a course manual. The course
-                            teaches participants to recognise the early signs of
-                            suspected mental health conditions and helps
-                            participants to build their confidence to offer
-                            appropriate and valuable first aid for mental health
-                            to people in the workplace and the community.
+                            This 2-Day course goes into detail on a wide range
+                            of mental health conditions and the support and help
+                            provided by healthcare professionals. It covers the
+                            content of both the Level 1 and Level 2
+                            qualifications and is aimed at Trainer/ Assessors
+                            and/or supervisor level within the workplace. The
+                            learning takes place over two days through a mixture
+                            of group activities, presentations and discussions.
                         </p>
                         <p>
-                            The course will provide participants with a range of
-                            practical tools and techniques to create a
-                            supportive climate and lead positive conversations
-                            about mental health.
+                            On the course you will gain the knowledge to
+                            recognise a wide range of mental health conditions,
+                            how to start a supportive conversation and when and
+                            how to signpost a person to seek appropriate
+                            professional help.
+                        </p>
+                        <p>
+                            You will learn about the first aid action plan for
+                            mental health, be able to put it in place and
+                            understand how to implement a positive mental health
+                            culture in the workplace. Each course is accompanied
+                            by a comprehensive set of resources as well as your
+                            own personal manual.
                         </p>
                         <p>
                             Participants will not be taught how to diagnose or
@@ -42,11 +52,13 @@ const MentalHealth1Day = () => (
 
                         <h2>Target Group</h2>
                         <p>
-                            This regulated training course offers a RQF
-                            qualification and a level 2 FAA Award and is
-                            designed for anyone wanting to increase their
-                            knowledge of mental health conditions and become a
-                            First Aider for Mental Health in their workplace.
+                            The regulated training course offers a RQF
+                            qualification and a level 3 FAA Award and is ideal
+                            for Heads of Service in all sectors, Teachers, Line
+                            Managers, HR professionals, Wellbeing/Mental Health
+                            Champions, Health and Safety representatives and
+                            anybody who wants to qualify as a First Aider for
+                            Mental Health.
                         </p>
 
                         <hr />
@@ -63,14 +75,10 @@ const MentalHealth1Day = () => (
                             </li>
                             <li>
                                 Know how to provide advice and practical support
-                                for a person presenting a mental health
-                                condition.
+                                for a person presenting a suspected mental
+                                health condition.
                             </li>
                             <li>Know how to recognise and manage stress.</li>
-                            <li>
-                                Know how to recognise a range of mental health
-                                conditions.
-                            </li>
                             <li>
                                 Understand the impact of substance abuse on
                                 mental health.
@@ -83,25 +91,26 @@ const MentalHealth1Day = () => (
                                 Know how to implement a positive mental health
                                 culture in the workplace.
                             </li>
+                            <li>
+                                Understand a range of mental health disorders
+                                and the support/therapy provided by professional
+                                healthcare.
+                            </li>
                         </ul>
 
                         <hr />
                         <h3>
-                            Cost: <span className='font-normal'>£120.00</span>
+                            Cost: <span className='font-normal'>£230.00</span>
                         </h3>
                         <h3>
                             Duration:{' '}
-                            <span className='font-normal'>1 - Day</span>
-                        </h3>
-                        <h3>
-                            Refresher Course:{' '}
-                            <span className='font-normal'>0.5 - Day</span>
+                            <span className='font-normal'>2 - Days</span>
                         </h3>
 
                         <hr />
                         <CourseNote />
                     </div>
-                    <CourseCTA id={3} />
+                    <CourseCTA id={4} />
                 </div>
                 <CourseTestimonial
                     author={{
@@ -116,7 +125,7 @@ const MentalHealth1Day = () => (
     </div>
 );
 
-MentalHealth1Day.pageTitle =
-    'First Aid for Mental Health 1-Day (RQF Level 2 Award)';
+MentalHealth2Days.pageTitle =
+    'Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)';
 
-export default MentalHealth1Day;
+export default MentalHealth2Days;

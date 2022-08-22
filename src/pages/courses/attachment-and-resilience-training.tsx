@@ -1,4 +1,4 @@
-import KAMPC from '@/assets/images/logos/KAM-Project-Consultants.png';
+import Sutton from '@/assets/images/logos/Sutton.png';
 import CourseCTA from '@/components/CourseCTA';
 import CourseHeader from '@/components/CourseHeader';
 import CourseTestimonial from '@/components/CourseTestimonial';
@@ -92,16 +92,11 @@ const AttachmentAndResilienceTraining = () => (
                 </div>
                 <CourseTestimonial
                     author={{
-                        image: KAMPC,
-                        name: 'KAM Project Consultants',
-                        role: 'Associate',
+                        image: Sutton,
+                        name: 'London Borough Sutton Council',
+                        role: 'Foster carer',
                     }}
-                    content='I found the Mental Health First Aid course
-                very informative with a very knowledgeable
-                trainer who goes that extra mile. There were
-                many elements of the training which will
-                help me support people at work and socially
-                so thank you Brian.'
+                    content='A very good course it made me realise how much research and information on attachment there is available out there on the internet.'
                 />
             </div>
         </div>

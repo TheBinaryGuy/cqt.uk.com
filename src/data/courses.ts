@@ -17,31 +17,32 @@ export type Course = {
 
 const mentalHealth: Course[] = [
     {
-        title: 'First Aid for Mental Health Awareness',
+        title: 'Awareness of First Aid for Mental Health (RQF Level 1 Award)',
         description:
-            'This half-day Mental Health Awareness training is designed to introduce people to the topic of mental wellbeing.',
+            'This regulated half-day Awareness training is designed to introduce people to the topic of mental health and wellbeing.',
         image: MentalHealthAwarenessTraining,
-        href: '/courses/first-aid-for-mental-health-awareness',
+        href: '/courses/awareness-of-first-aid-for-mental-health',
     },
     {
-        title: 'First Aid for Mental Health (1-Day)',
+        title: 'First Aid for Mental Health 1-Day (RQF Level 2 Award)',
         description:
-            'This one-day course available face-to-face or online is accompanied by a course workbook.',
+            'This regulated course provides learners with the knowledge to identify suspected mental health conditions and qualifies you as a First Aider for Mental health.',
         image: FirstAidForMentalHealth,
         href: '/courses/first-aid-for-mental-health-1-day',
     },
     {
-        title: 'First Aid for Mental Health (2-Day)',
+        title: 'Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)',
         description:
-            'This two-day course builds on the one-day First Aid for Mental Health course and qualifies you as a Mental Health First Aider.',
+            'This regulated course builds on the one-day First Aid for Mental Health course and qualifies you as a First Aid for Mental health Supervisor.',
         image: FirstAidForMentalHealth,
-        href: '/courses/first-aid-for-mental-health-2-day',
+        href: '/courses/supervising-first-aid-for-mental-health-2-days',
     },
     {
-        title: 'First Aid for Mental Health Young People',
-        description: 'TBD',
+        title: 'First Aid for Youth Mental Health 1-Day (RQF Level 2 Award)',
+        description:
+            'This regulated course has been designed with children and young people in mind and qualifies you as a Youth First Aider for Mental health.',
         image: 'https://dummyimage.com/800x450/000/aaa',
-        href: '/courses/first-aid-for-mental-health-young-people',
+        href: '/courses/first-aid-for-young-mental-health-1-day',
     },
     {
         title: 'First Aid for Mental Health Online',

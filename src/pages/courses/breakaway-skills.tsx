@@ -1,4 +1,4 @@
-import KAMPC from '@/assets/images/logos/KAM-Project-Consultants.png';
+import ActiveProspects from '@/assets/images/logos/Active-Prospects.png';
 import CourseCTA from '@/components/CourseCTA';
 import CourseHeader from '@/components/CourseHeader';
 import CourseTestimonial from '@/components/CourseTestimonial';
@@ -82,16 +82,11 @@ const BreakawaySkills = () => (
                 </div>
                 <CourseTestimonial
                     author={{
-                        image: KAMPC,
-                        name: 'KAM Project Consultants',
-                        role: 'Associate',
+                        image: ActiveProspects,
+                        name: 'Active Prospects',
+                        role: 'Team Leader',
                     }}
-                    content='I found the Mental Health First Aid course
-                very informative with a very knowledgeable
-                trainer who goes that extra mile. There were
-                many elements of the training which will
-                help me support people at work and socially
-                so thank you Brian.'
+                    content='I can support the service users in a different way now to ensure they get the support that they need, and also support the people who care for them. Relevant topics covered, everything that I expected and more.'
                 />
             </div>
         </div>
