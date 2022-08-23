@@ -7,6 +7,7 @@ const appData = {
     name,
     version: pkg.version,
     description: `${name} - ${pkg.description}`,
+    pureDescription: pkg.description,
     seoTitle: 'Care Quality Trainging',
     author: pkg.author.name,
     type: 'Website',

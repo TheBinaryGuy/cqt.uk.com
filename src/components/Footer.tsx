@@ -24,6 +24,13 @@ export const Footer = () => (
                         </li>
                         <li>
                             <Link
+                                href='/faq'
+                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
+                                FAQ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href='/about'
                                 className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
                                 About

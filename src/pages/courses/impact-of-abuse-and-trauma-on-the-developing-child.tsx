@@ -3,12 +3,12 @@ import CourseCTA from '@/components/CourseCTA';
 import CourseHeader from '@/components/CourseHeader';
 import CourseTestimonial from '@/components/CourseTestimonial';
 
-const UnderstandingTheImpactOfAbuseAndTraumaOnTheDevelopingChild = () => (
+const ImpactOfAbuseAndTraumaOnTheDevelopingChild = () => (
     <div className='overflow-hidden bg-gray-50 py-16'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
             <CourseHeader
                 category='Mental Health Adults and Children'
-                title='Understanding the Impact of Abuse and Trauma on the Developing Child'
+                title='Impact of Abuse and Trauma on the Developing Child'
             />
             <div className='lg:grid lg:grid-cols-2 lg:items-start lg:gap-8'>
                 <div className='relative z-10'>
@@ -83,7 +83,7 @@ const UnderstandingTheImpactOfAbuseAndTraumaOnTheDevelopingChild = () => (
     </div>
 );
 
-UnderstandingTheImpactOfAbuseAndTraumaOnTheDevelopingChild.pageTitle =
-    'Understanding the Impact of Abuse and Trauma on the Developing Child';
+ImpactOfAbuseAndTraumaOnTheDevelopingChild.pageTitle =
+    'Impact of Abuse and Trauma on the Developing Child';
 
-export default UnderstandingTheImpactOfAbuseAndTraumaOnTheDevelopingChild;
+export default ImpactOfAbuseAndTraumaOnTheDevelopingChild;

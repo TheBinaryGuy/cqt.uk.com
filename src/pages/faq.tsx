@@ -121,6 +121,6 @@ const FAQ = () => (
     </div>
 );
 
-FAQ.pageTitle = 'F.A.Q.';
+FAQ.pageTitle = 'Frequently Asked Questions';
 
 export default FAQ;

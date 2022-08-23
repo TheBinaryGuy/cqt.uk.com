@@ -120,16 +120,16 @@ export const Header = () => (
                     </li>
                     <li className='ml-6 hidden md:block'>
                         <Link
-                            href='/about'
+                            href='/faq'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                            About
+                            FAQ
                         </Link>
                     </li>
                     <li className='ml-6 hidden md:block'>
                         <Link
-                            href='/faq'
+                            href='/about'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                            FAQ
+                            About
                         </Link>
                     </li>
                     <li className='ml-6 hidden md:block'>

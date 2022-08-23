@@ -473,4 +473,6 @@ const Contact = () => {
     );
 };
 
+Contact.pageTitle = 'Contact';
+
 export default Contact;
