@@ -34,7 +34,7 @@ const mentalHealth: Course[] = [
         description:
             'This regulated course has been designed with children and young people in mind and qualifies you as a Youth First Aider for Mental health.',
         image: '/images/courses/first-aid-for-young-mental-health-1-day.png',
-        href: '/courses/first-aid-for-young-mental-health-1-day',
+        href: '/courses/first-aid-for-youth-mental-health-1-day',
     },
     {
         title: 'First Aid for Mental Health Universities and Schools',

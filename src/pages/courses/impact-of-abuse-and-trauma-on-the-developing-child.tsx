@@ -68,7 +68,7 @@ const ImpactOfAbuseAndTraumaOnTheDevelopingChild = () => (
                             Duration: <span className='font-normal'>1 Day</span>
                         </h3>
                     </div>
-                    <CourseCTA id={12} />
+                    <CourseCTA id={9} />
                 </div>
                 <CourseTestimonial
                     author={{

@@ -16,13 +16,17 @@ const MentalHealth1Day = () => (
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This one-day course available face-to-face or online
-                            is accompanied by a course manual. The course
-                            teaches participants to recognise the early signs of
-                            suspected mental health conditions and helps
-                            participants to build their confidence to offer
-                            appropriate and valuable first aid for mental health
-                            to people in the workplace and the community.
+                            This regulated one-day training course offers a RQF
+                            qualification and a level 2 FAA Award. The course is
+                            available face-to-face or online and is accompanied
+                            by a course manual.
+                        </p>
+                        <p>
+                            The course teaches participants to recognise the
+                            early signs of suspected mental health conditions
+                            and helps participants to build their confidence to
+                            offer appropriate and valuable first aid for mental
+                            health to people in the workplace and the community.
                         </p>
                         <p>
                             The course will provide participants with a range of
@@ -42,11 +46,10 @@ const MentalHealth1Day = () => (
 
                         <h2>Target Group</h2>
                         <p>
-                            This regulated training course offers a RQF
-                            qualification and a level 2 FAA Award and is
-                            designed for anyone wanting to increase their
-                            knowledge of mental health conditions and become a
-                            First Aider for Mental Health in their workplace.
+                            The regulated course is designed for anyone wanting
+                            to increase their knowledge of mental health
+                            conditions and become a First Aider for Mental
+                            Health in their workplace.
                         </p>
 
                         <hr />

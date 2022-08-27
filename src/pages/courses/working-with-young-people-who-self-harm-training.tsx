@@ -70,7 +70,7 @@ const WorkingWithYoungPeopleWhoSelfHarmTraining = () => (
                             Duration: <span className='font-normal'>1 Day</span>
                         </h3>
                     </div>
-                    <CourseCTA id={10} />
+                    <CourseCTA id={7} />
                 </div>
                 <CourseTestimonial
                     author={{

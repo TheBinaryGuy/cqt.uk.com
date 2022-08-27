@@ -14,22 +14,26 @@ const MentalHealthUniversitiesAndSchools = () => (
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This one or two-day course is accompanied by a
-                            course manual. Our training will give staff and
-                            students the skills and tools to recognise the early
-                            signs of mental health conditions, an understanding
-                            of mental health and the factors that can affect
-                            wellbeing and build their confidence to help keep
-                            themselves, their colleagues, students and peers in
-                            good health and help stop preventable issues arising
-                            by building a supportive culture around mental
-                            health.
+                            This regulated one or two-day training course offers
+                            a RQF qualification and a level 2 or 3 FAA Award
+                            (depending on the course chosen). The course is
+                            available face-to-face or online and is accompanied
+                            by a course manual.
+                        </p>
+                        <p>
+                            The course will give staff and students the skills
+                            and tools to recognise the early signs of mental
+                            health conditions, an understanding of mental health
+                            and the factors that can affect mental wellbeing.
                         </p>
                         <p>
                             The course will provide participants with a range of
-                            practical tools and techniques to create a
-                            supportive climate and lead positive conversations
-                            about mental health.
+                            practical tools and techniques to help grow their
+                            confidence to support themselves, their colleagues,
+                            students and peers. Participants will also learn how
+                            to prevent issues arising by building a supportive
+                            culture, encouraging positive conversations and
+                            creating a healthy climate around mental wellbeing.
                         </p>
                         <p>
                             Participants will not be taught how to diagnose or

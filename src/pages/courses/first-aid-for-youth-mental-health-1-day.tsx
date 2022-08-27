@@ -4,7 +4,7 @@ import CourseHeader from '@/components/CourseHeader';
 import CourseNote from '@/components/CourseNote';
 import CourseTestimonial from '@/components/CourseTestimonial';
 
-const MentalHealthYoungPeople = () => (
+const MentalHealthYouthPeople = () => (
     <div className='overflow-hidden bg-gray-50 py-16'>
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
             <CourseHeader
@@ -16,11 +16,20 @@ const MentalHealthYoungPeople = () => (
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            The training course has been designed with children
-                            and young people in mind covering areas such as
-                            stress, anxiety, self-harm, eating disorders and
-                            bullying, and will provide the knowledge and skills
-                            to identify a potential mental health condition.
+                            This regulated one-day training course offers a RQF
+                            qualification and a level 2 FAA Award. The course is
+                            available face-to-face or online and is accompanied
+                            by a course manual.
+                        </p>
+                        <p>
+                            The course has been designed with children and young
+                            people in mind covering areas such as stress,
+                            anxiety, self-harm, eating disorders and bullying,
+                            and will provide the knowledge and skills to
+                            identify a potential mental health condition. It
+                            also teaches you the skills to start a supportive
+                            conversation and how to signpost a young person
+                            towards professional help.
                         </p>
                         <p>
                             Participants will not be taught how to diagnose or
@@ -34,11 +43,10 @@ const MentalHealthYoungPeople = () => (
 
                         <h2>Target Group</h2>
                         <p>
-                            The regulated training course offers a RQF
-                            qualification and a level 2 FAA Award and is
-                            suitable for young adults and anyone who actively
-                            connects with children such as parents, carers,
-                            teachers and youth group leaders.
+                            The regulated course is suitable for young adults
+                            and anyone who actively connects with children such
+                            as parents, carers, teachers and youth group
+                            leaders.
                         </p>
 
                         <hr />
@@ -94,7 +102,7 @@ const MentalHealthYoungPeople = () => (
     </div>
 );
 
-MentalHealthYoungPeople.pageTitle =
+MentalHealthYouthPeople.pageTitle =
     'First Aid for Youth Mental Health 1-Day (RQF Level 2 Award)';
 
-export default MentalHealthYoungPeople;
+export default MentalHealthYouthPeople;

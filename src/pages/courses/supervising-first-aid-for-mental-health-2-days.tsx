@@ -16,29 +16,34 @@ const MentalHealth2Days = () => (
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This 2-Day course goes into detail on a wide range
-                            of mental health conditions and the support and help
+                            This regulated 2-Day training course offers a RQF
+                            qualification and a level 3 FAA Award. The course is
+                            available face-to-face or online and is accompanied
+                            by a course manual.
+                        </p>
+                        <p>
+                            The course goes into detail on a wide range of
+                            mental health conditions and the support and help
                             provided by healthcare professionals. It covers the
                             content of both the Level 1 and Level 2
-                            qualifications and is aimed at Trainer/ Assessors
-                            and/or supervisor level within the workplace. The
-                            learning takes place over two days through a mixture
-                            of group activities, presentations and discussions.
+                            qualifications The learning takes place over two
+                            days through a mixture of group activities,
+                            presentations and discussions.
                         </p>
                         <p>
-                            On the course you will gain the knowledge to
-                            recognise a wide range of mental health conditions,
-                            how to start a supportive conversation and when and
-                            how to signpost a person to seek appropriate
-                            professional help.
+                            On the course participants will gain the knowledge
+                            to recognise a wide range of mental health
+                            conditions, how to start a supportive conversation
+                            and when and how to signpost a person to seek
+                            appropriate professional help.
                         </p>
                         <p>
-                            You will learn about the first aid action plan for
-                            mental health, be able to put it in place and
-                            understand how to implement a positive mental health
-                            culture in the workplace. Each course is accompanied
-                            by a comprehensive set of resources as well as your
-                            own personal manual.
+                            Participants will learn about the first aid action
+                            plan for mental health, be able to put it in place
+                            and understand how to implement a positive mental
+                            health culture in the workplace. Each course is
+                            accompanied by a comprehensive set of resources as
+                            well as your own personal manual.
                         </p>
                         <p>
                             Participants will not be taught how to diagnose or
@@ -52,13 +57,12 @@ const MentalHealth2Days = () => (
 
                         <h2>Target Group</h2>
                         <p>
-                            The regulated training course offers a RQF
-                            qualification and a level 3 FAA Award and is ideal
-                            for Heads of Service in all sectors, Teachers, Line
-                            Managers, HR professionals, Wellbeing/Mental Health
-                            Champions, Health and Safety representatives and
-                            anybody who wants to qualify as a First Aider for
-                            Mental Health.
+                            The regulated course is ideal for Heads of Service,
+                            Trainer/ Assessors, Teachers, Line Managers, HR
+                            professionals, Wellbeing/Mental Health Champions,
+                            Health and Safety representatives and anybody who
+                            wants to qualify as a First Aider for Mental Health
+                            within the workplace.
                         </p>
 
                         <hr />

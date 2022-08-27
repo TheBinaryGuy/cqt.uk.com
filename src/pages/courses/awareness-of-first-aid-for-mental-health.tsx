@@ -16,29 +16,38 @@ const Awareness = () => (
                     <div className='prose prose-indigo mx-auto lg:max-w-none'>
                         <h2>Course overview</h2>
                         <p>
-                            This half-day training available face-to-face or
-                            online is designed to introduce people to the topic
-                            of mental wellbeing and is accompanied by a course
-                            manual. It raises awareness of mental health
+                            This regulated half-day training course offers a RQF
+                            qualification, and a level 1 FAA Award. The course
+                            is available face-to-face or online and is designed
+                            to introduce people to the topic of mental wellbeing
+                            and is accompanied by a course manual.
+                        </p>
+                        <p>
+                            The course equips participants with the required
+                            knowledge to recognise a suspected mental health
+                            condition. It raises awareness of mental health
                             conditions, stigma and discrimination surrounding
-                            mental health problems. The course will teach
-                            participants to identify someone who has a mental
-                            health condition and how to support them both in and
-                            out of the workplace.
+                            mental health issues. It also teaches participants
+                            the skills to start a conversation, how to support
+                            them both in and out of the workplace and be able to
+                            signpost a person towards professional help.
+                        </p>
+                        <p>
+                            Participants will not be taught how to diagnose or
+                            treat mental health conditions as this can only be
+                            carried out by professionals who have the
+                            appropriate knowledge, experience and
+                            qualifications.
                         </p>
 
                         <hr />
 
                         <h2>Target Group</h2>
                         <p>
-                            This regulated training course offers a RQF
-                            qualification, and a level 1 FAA Award it equips
-                            learners with the required knowledge to recognise a
-                            suspected mental health condition. It also teaches
-                            you the skills to start a conversation and be able
-                            to signpost a person towards professional help. The
-                            course is suitable for anybody wanting to increase
-                            their knowledge of Mental Health conditions.
+                            The regulated course is suitable for anybody wanting
+                            to increase their knowledge of Mental Health
+                            conditions to help support people in and out of the
+                            workplace.
                         </p>
 
                         <hr />

@@ -88,7 +88,7 @@ const AttachmentAndResilienceTraining = () => (
                             Duration: <span className='font-normal'>1 Day</span>
                         </h3>
                     </div>
-                    <CourseCTA id={11} />
+                    <CourseCTA id={8} />
                 </div>
                 <CourseTestimonial
                     author={{

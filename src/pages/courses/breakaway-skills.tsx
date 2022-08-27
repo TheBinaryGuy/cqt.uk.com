@@ -78,7 +78,7 @@ const BreakawaySkills = () => (
                             <span className='font-normal'>0.5 Day</span>
                         </h3>
                     </div>
-                    <CourseCTA id={10} />
+                    <CourseCTA id={11} />
                 </div>
                 <CourseTestimonial
                     author={{
