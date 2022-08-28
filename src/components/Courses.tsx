@@ -41,7 +41,7 @@ const Courses = () => (
                 </h3>
                 <div className='hidden h-0.5 flex-grow rounded-full bg-primary sm:block' />
             </div>
-            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
+            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3'>
                 {courses.mentalHealth.map(course => (
                     <CourseCard key={course.title} course={course} />
                 ))}
@@ -54,7 +54,7 @@ const Courses = () => (
                     Mental Health Adults and Children
                 </h3>
             </div>
-            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
+            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3'>
                 {courses.adultsAndChildren.map(course => (
                     <CourseCard key={course.title} course={course} />
                 ))}
@@ -67,7 +67,7 @@ const Courses = () => (
                 </h3>
                 <div className='hidden h-0.5 flex-grow rounded-full bg-primary sm:block' />
             </div>
-            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4'>
+            <ol className='grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3'>
                 {courses.healthAndSafety.map(course => (
                     <CourseCard key={course.title} course={course} />
                 ))}
