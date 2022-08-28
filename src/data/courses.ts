@@ -23,7 +23,7 @@ const mentalHealth: Course[] = [
         href: '/courses/first-aid-for-mental-health-1-day',
     },
     {
-        title: 'Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)',
+        title: 'Supervising First Aid for Mental Health 2-Days (RQF Level 3 Award)',
         description:
             'This regulated course builds on the one-day First Aid for Mental Health course and qualifies you as a First Aid for Mental health Supervisor.',
         image: '/images/courses/supervising-first-aid-for-mental-health-2-days.png',

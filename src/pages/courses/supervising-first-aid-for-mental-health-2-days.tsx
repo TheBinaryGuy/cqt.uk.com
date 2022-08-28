@@ -9,7 +9,7 @@ const MentalHealth2Days = () => (
         <div className='mx-auto max-w-7xl space-y-8 px-4 sm:px-6 lg:px-8'>
             <CourseHeader
                 category='First Aid for Mental Health'
-                title='Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)'
+                title='Supervising First Aid for Mental Health 2-Days (RQF Level 3 Award)'
             />
             <div className='lg:grid lg:grid-cols-2 lg:items-start lg:gap-8'>
                 <div className='relative z-10'>
@@ -130,6 +130,6 @@ const MentalHealth2Days = () => (
 );
 
 MentalHealth2Days.pageTitle =
-    'Supervising First Aid for Mental Health 2 Days (RQF Level 3 Award)';
+    'Supervising First Aid for Mental Health 2-Days (RQF Level 3 Award)';
 
 export default MentalHealth2Days;
