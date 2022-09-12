@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.cqt.uk.com
+Host: https://cqt.uk.com
 
 # Sitemaps
-Sitemap: https://www.cqt.uk.com/sitemap.xml
+Sitemap: https://cqt.uk.com/sitemap.xml
