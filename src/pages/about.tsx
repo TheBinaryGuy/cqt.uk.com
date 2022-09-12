@@ -38,60 +38,6 @@ const About = () => (
         </section>
 
         <section
-            id='course-information'
-            aria-labelledby='course-information'
-            className='scroll-mt-14 py-16 sm:scroll-mt-16 sm:py-20'>
-            <div className='mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:max-w-4xl lg:px-12'>
-                <h2
-                    id='course-information'
-                    className='font-display text-center text-4xl font-bold text-slate-900'>
-                    Course Information
-                </h2>
-            </div>
-            <div className='prose prose-lg mx-auto mt-16'>
-                <p>
-                    Our Mental Health Awareness course helps to create a
-                    positive wellbeing culture in the workplace and community.
-                </p>
-                <p>
-                    Our one and two-day regulated First Aid for Mental Health
-                    courses are Level 2 and Level 3 qualifications, from
-                    awarding organisation RQF meaning they are nationally
-                    recognised qualifications.
-                </p>
-                <div>
-                    <h4>
-                        To be awarded the Level 2 qualification, all
-                        participants must pass the below assessments
-                    </h4>
-                    <ul className='marker:text-black'>
-                        <li>One multiple-choice question paper.</li>
-                        <li>A practical assessment.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>
-                        To be awarded the Level 3 qualification, all delegates
-                        must pass the below assessments
-                    </h4>
-                    <ul className='marker:text-black'>
-                        <li>Two multiple-choice question papers.</li>
-                        <li>A practical assessment.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Certification</h4>
-                    <p>
-                        All candidates will be awarded the relevant level Ofqual
-                        regulated RQF/SCQF qualification based on the course
-                        they have completed and upon the completion of a
-                        short-written assessment.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section
             id='the-arts-and-mental-health'
             aria-labelledby='the-arts-and-mental-health-title'
             className='scroll-mt-14 py-16 sm:scroll-mt-16 sm:py-20'>
