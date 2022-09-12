@@ -9,13 +9,16 @@ import type { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-interface Props extends AppProps {
-    Component: NextComponentType<NextPageContext, any, {}> & {
+type SEOProps = {
+    pageTitle?: string;
+    pageDesc?: string;
+    pageImg?: string;
+};
+
+interface Props extends AppProps<SEOProps> {
+    Component: NextComponentType<NextPageContext, any, SEOProps> & {
         getLayout?: (page: React.ReactNode) => JSX.Element | null;
-        pageTitle?: string;
-        pageDesc?: string;
-        pageImg?: string;
-    };
+    } & SEOProps;
 }
 
 const App: React.FC<Props> = ({ Component, pageProps }) => {
