@@ -11,12 +11,14 @@ const Contact = () => {
         register,
         handleSubmit,
         formState: { errors },
+        reset,
     } = useForm<z.infer<typeof contactSchema>>({
         resolver: zodResolver(contactSchema),
     });
 
     const [submitting, setSubmitting] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [success, setSuccess] = useState<boolean>(false);
 
     const onSubmit = async (data: z.infer<typeof contactSchema>) => {
         try {
@@ -30,8 +32,12 @@ const Contact = () => {
                     'Content-Type': 'application/json',
                 },
             });
+
+            reset();
+            setSuccess(true);
         } catch {
             setError('Error submitting the form. Please try again later.');
+            setSuccess(false);
         } finally {
             setSubmitting(false);
         }
@@ -45,7 +51,7 @@ const Contact = () => {
 
                     <div className='grid grid-cols-1 lg:grid-cols-3'>
                         {/* Contact information */}
-                        <div className='relative overflow-hidden bg-primary py-10 px-6 sm:px-10 xl:p-12'>
+                        <div className='relative overflow-hidden bg-primary py-10 px-6 sm:px-10 lg:min-h-[675px] xl:p-12'>
                             <div
                                 className='pointer-events-none absolute inset-0 sm:hidden'
                                 aria-hidden='true'>
@@ -315,157 +321,171 @@ const Contact = () => {
                             </ul>
                         </div>
 
-                        {/* Contact form */}
-                        <div className='py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12'>
-                            <h3 className='text-lg font-medium text-gray-900'>
-                                Send us a message
-                            </h3>
-                            <form
-                                onSubmit={handleSubmit(onSubmit)}
-                                className='mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8'>
-                                {error && (
-                                    <small className='text-red-500'>
-                                        {error}
-                                    </small>
-                                )}
-                                <div className='sm:col-span-2'>
-                                    <label
-                                        htmlFor='name'
-                                        className='block text-sm font-medium text-gray-900'>
-                                        Name *
-                                    </label>
-                                    <div className='mt-1'>
-                                        <input
-                                            type='text'
-                                            id='name'
-                                            autoComplete='name'
-                                            {...register('name')}
-                                            className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
-                                            aria-describedby='name'
-                                        />
-                                    </div>
-                                    {errors.name && (
+                        {success ? (
+                            /* Thanks */
+                            <div className='py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12'>
+                                <h3 className='text-lg font-medium text-gray-900'>
+                                    Thank you for contacting us!
+                                </h3>
+                                <p className='mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8'>
+                                    We will get back to you as soon as possible.
+                                </p>
+                            </div>
+                        ) : (
+                            /* Contact form */
+                            <div className='py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12'>
+                                <h3 className='text-lg font-medium text-gray-900'>
+                                    Send us a message
+                                </h3>
+                                <form
+                                    onSubmit={handleSubmit(onSubmit)}
+                                    className='mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8'>
+                                    {error && (
                                         <small className='text-red-500'>
-                                            {errors.name.message}
+                                            {error}
                                         </small>
                                     )}
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor='email'
-                                        className='block text-sm font-medium text-gray-900'>
-                                        Email *
-                                    </label>
-                                    <div className='mt-1'>
-                                        <input
-                                            id='email'
-                                            type='email'
-                                            autoComplete='email'
-                                            {...register('email')}
-                                            className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
-                                            aria-describedby='email'
-                                        />
-                                    </div>
-                                    {errors.email && (
-                                        <small className='text-red-500'>
-                                            {errors.email.message}
-                                        </small>
-                                    )}
-                                </div>
-                                <div>
-                                    <div className='flex justify-between'>
+                                    <div className='sm:col-span-2'>
                                         <label
-                                            htmlFor='phone'
+                                            htmlFor='name'
                                             className='block text-sm font-medium text-gray-900'>
-                                            Phone
+                                            Name *
                                         </label>
-                                        <span
-                                            id='phone-optional'
-                                            className='text-sm text-gray-500'>
-                                            Optional
-                                        </span>
+                                        <div className='mt-1'>
+                                            <input
+                                                type='text'
+                                                id='name'
+                                                autoComplete='name'
+                                                {...register('name')}
+                                                className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
+                                                aria-describedby='name'
+                                            />
+                                        </div>
+                                        {errors.name && (
+                                            <small className='text-red-500'>
+                                                {errors.name.message}
+                                            </small>
+                                        )}
                                     </div>
-                                    <div className='mt-1'>
-                                        <input
-                                            type='text'
-                                            id='phone'
-                                            autoComplete='tel'
-                                            {...register('phone')}
-                                            className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
-                                            aria-describedby='phone-optional'
-                                        />
-                                    </div>
-                                    {errors.phone && (
-                                        <small className='text-red-500'>
-                                            {errors.phone.message}
-                                        </small>
-                                    )}
-                                </div>
-                                <div className='sm:col-span-2'>
-                                    <label
-                                        htmlFor='subject'
-                                        className='block text-sm font-medium text-gray-900'>
-                                        Subject *
-                                    </label>
-                                    <div className='mt-1'>
-                                        <input
-                                            type='text'
-                                            id='subject'
-                                            {...register('subject')}
-                                            className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
-                                            aria-describedby='subject'
-                                        />
-                                    </div>
-                                    {errors.subject && (
-                                        <small className='text-red-500'>
-                                            {errors.subject.message}
-                                        </small>
-                                    )}
-                                </div>
-                                <div className='sm:col-span-2'>
-                                    <div className='flex justify-between'>
+                                    <div>
                                         <label
-                                            htmlFor='message'
+                                            htmlFor='email'
                                             className='block text-sm font-medium text-gray-900'>
-                                            Message *
+                                            Email *
                                         </label>
-                                        <span
-                                            id='message-max'
-                                            className='text-sm text-gray-500'>
-                                            Max. 500 characters
-                                        </span>
+                                        <div className='mt-1'>
+                                            <input
+                                                id='email'
+                                                type='email'
+                                                autoComplete='email'
+                                                {...register('email')}
+                                                className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
+                                                aria-describedby='email'
+                                            />
+                                        </div>
+                                        {errors.email && (
+                                            <small className='text-red-500'>
+                                                {errors.email.message}
+                                            </small>
+                                        )}
                                     </div>
-                                    <div className='mt-1'>
-                                        <textarea
-                                            id='message'
-                                            rows={4}
-                                            {...register('message')}
-                                            className='block w-full rounded-md border border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
-                                            aria-describedby='message'
-                                            defaultValue={''}
-                                        />
+                                    <div>
+                                        <div className='flex justify-between'>
+                                            <label
+                                                htmlFor='phone'
+                                                className='block text-sm font-medium text-gray-900'>
+                                                Phone
+                                            </label>
+                                            <span
+                                                id='phone-optional'
+                                                className='text-sm text-gray-500'>
+                                                Optional
+                                            </span>
+                                        </div>
+                                        <div className='mt-1'>
+                                            <input
+                                                type='text'
+                                                id='phone'
+                                                autoComplete='tel'
+                                                {...register('phone')}
+                                                className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
+                                                aria-describedby='phone-optional'
+                                            />
+                                        </div>
+                                        {errors.phone && (
+                                            <small className='text-red-500'>
+                                                {errors.phone.message}
+                                            </small>
+                                        )}
                                     </div>
-                                    {errors.message && (
-                                        <small className='text-red-500'>
-                                            {errors.message.message}
-                                        </small>
-                                    )}
-                                </div>
-                                <div className='sm:col-span-2 sm:flex sm:justify-end'>
-                                    <button
-                                        type='submit'
-                                        disabled={submitting}
-                                        className='mt-2 inline-flex w-full items-center justify-center gap-2 rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/90 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-500 sm:w-auto'>
-                                        <span>Submit</span>
-                                        <RefreshIcon
-                                            className={`h-4 animate-spin ${
-                                                submitting ? 'block' : 'hidden'
-                                            }`}
-                                        />
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                                    <div className='sm:col-span-2'>
+                                        <label
+                                            htmlFor='subject'
+                                            className='block text-sm font-medium text-gray-900'>
+                                            Subject *
+                                        </label>
+                                        <div className='mt-1'>
+                                            <input
+                                                type='text'
+                                                id='subject'
+                                                {...register('subject')}
+                                                className='block w-full rounded-md border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
+                                                aria-describedby='subject'
+                                            />
+                                        </div>
+                                        {errors.subject && (
+                                            <small className='text-red-500'>
+                                                {errors.subject.message}
+                                            </small>
+                                        )}
+                                    </div>
+                                    <div className='sm:col-span-2'>
+                                        <div className='flex justify-between'>
+                                            <label
+                                                htmlFor='message'
+                                                className='block text-sm font-medium text-gray-900'>
+                                                Message *
+                                            </label>
+                                            <span
+                                                id='message-max'
+                                                className='text-sm text-gray-500'>
+                                                Max. 500 characters
+                                            </span>
+                                        </div>
+                                        <div className='mt-1'>
+                                            <textarea
+                                                id='message'
+                                                rows={4}
+                                                {...register('message')}
+                                                className='block w-full rounded-md border border-gray-300 py-3 px-4 text-gray-900 shadow-sm focus:border-primary/90 focus:ring-primary/90'
+                                                aria-describedby='message'
+                                                defaultValue={''}
+                                            />
+                                        </div>
+                                        {errors.message && (
+                                            <small className='text-red-500'>
+                                                {errors.message.message}
+                                            </small>
+                                        )}
+                                    </div>
+                                    <div className='sm:col-span-2 sm:flex sm:justify-end'>
+                                        <button
+                                            type='submit'
+                                            disabled={submitting}
+                                            className='mt-2 inline-flex w-full items-center justify-center gap-2 rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/90 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-500 sm:w-auto'>
+                                            <span>Submit</span>
+                                            <RefreshIcon
+                                                className={`h-4 animate-spin ${
+                                                    submitting
+                                                        ? 'block'
+                                                        : 'hidden'
+                                                }`}
+                                            />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
