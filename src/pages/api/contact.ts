@@ -31,6 +31,7 @@ const handler: NextApiHandler = async (req, res) => {
         await transporter.sendMail({
             from: `"${appData.name}" <${process.env.SMTP_USER}>`,
             to: process.env.SMTP_USER,
+            cc: email,
             subject: subject,
             text: `From:\n${email}\n\nName:\n${name}\n\nPhone:\n${phone}\n\nMessage:\n${message}`,
         });
