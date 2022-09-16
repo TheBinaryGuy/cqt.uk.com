@@ -139,14 +139,15 @@ export const Header = () => (
                             Contact
                         </Link>
                     </li>
-                    <li className='ml-auto'>
+                    {/* <li className='ml-auto'>
                         <Link
                             href='/resource-hub'
                             className='group inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold text-white hover:bg-primary/90 hover:text-slate-100 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/90 active:bg-primary/90 active:text-blue-100'>
                             Access Resource Hub
                         </Link>
-                    </li>
-                    <li className='ml-5 -mr-1 md:hidden'>
+                    </li> */}
+                    {/* ml-5 -mr-1 */}
+                    <li className='ml-auto mr-3 md:hidden'>
                         <MobileNavigation />
                     </li>
                 </ul>
