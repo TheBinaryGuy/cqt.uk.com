@@ -104,7 +104,8 @@ export const Header = () => (
                             <Logo className='h-12 w-auto' />
                         </Link>
                     </li>
-                    <li className='ml-12 hidden md:block'>
+                    {/* ml-12 */}
+                    <li className='ml-auto hidden md:block'>
                         <Link
                             href='/courses'
                             className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
