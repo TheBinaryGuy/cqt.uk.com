@@ -71,6 +71,14 @@ const MobileNavigation = () => (
                             </li>
                             <li>
                                 <Link
+                                    href='/faq'
+                                    className='block w-full'
+                                    onClick={() => close()}>
+                                    FAQ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
                                     href='/about'
                                     className='block w-full'
                                     onClick={() => close()}>
