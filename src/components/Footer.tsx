@@ -123,7 +123,7 @@ export const Footer = () => (
                         target='_blank'
                         rel='noreferrer'
                         className='group'>
-                        <span className='sr-only'>CQT on Faecbook</span>
+                        <span className='sr-only'>CQT on Facebook</span>
                         <svg
                             aria-hidden='true'
                             className='h-6 w-6 transition-transform group-hover:scale-125'
