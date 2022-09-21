@@ -15,6 +15,7 @@ const nextConfig = {
             allowFutureImage: true,
         },
         newNextLinkBehavior: true,
+        nextScriptWorkers: true,
     },
     reactStrictMode: true,
 };
