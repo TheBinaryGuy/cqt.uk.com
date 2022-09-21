@@ -1,4 +1,5 @@
 import AppHead from '@/components/AppHead';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getLayout } from '@/components/layouts/layout';
 import Loading from '@/components/loading';
 import SEO from '@/components/SEO';
@@ -72,6 +73,9 @@ const App: React.FC<Props> = ({ Component, pageProps }) => {
                 img={pageProps.pageImg ?? Component.pageImg ?? appData.ogImg}
             />
             {getFinalLayout(<Component {...pageProps} />)}
+            <GoogleAnalytics
+                measurementId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
+            />
         </>
     );
 };
