@@ -57,7 +57,7 @@
         "cssnano": "^5.1.13",
         "eslint": "8.24.0",
         "eslint-config-next": "12.3.1",
-        "next-sitemap": "^3.1.23",
+        "next-sitemap": "^3.1.24",
         "postcss": "^8.4.17",
         "prettier": "^2.7.1",
         "prettier-plugin-tailwindcss": "^0.1.13",
