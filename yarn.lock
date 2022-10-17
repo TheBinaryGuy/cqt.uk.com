@@ -319,10 +319,10 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/flickity@^2.2.6":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@types/flickity/-/flickity-2.2.6.tgz#720673bfae791a862a6798f2564ba77d3deb8621"
-  integrity sha512-jzJ+Lpc41MmjG1SxWS60lTGFXvd45yaO1ZC0qNkfWaZzu1PrykLIHw4KzHA/eGJDG2k/s57IHMgMLdvSAulfkw==
+"@types/flickity@^2.2.7":
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/@types/flickity/-/flickity-2.2.7.tgz#a007083be3a79f698eb248635e4de05aa1f84ed4"
+  integrity sha512-Vsf/n2Yab2ytHXBhgs+XJi7nXEOnspUdApe7WbnKGrBAZvSpz8+pjxpeKfFWPrFeDrgLRJr230DHb4YyIw4lbA==
 
 "@types/hast@^2.0.0":
   version "2.3.4"
