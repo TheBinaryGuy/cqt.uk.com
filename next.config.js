@@ -4,16 +4,12 @@ const nextConfig = {
     images: {
         domains: [
             'dummyimage.com',
-            'www.cqt.uk.com',
-            'cqt.uk.com',
-            process.env.NEXT_PUBLIC_DOMAIN,
+            process.env.NEXT_PUBLIC_DOMAIN ?? 'cqt.uk.com',
+            process.env.NEXT_PUBLIC_VERCEL_URL ?? 'cqt.uk.com',
         ],
         formats: ['image/avif', 'image/webp'],
     },
     experimental: {
-        images: {
-            allowFutureImage: true,
-        },
         newNextLinkBehavior: true,
         nextScriptWorkers: true,
     },
