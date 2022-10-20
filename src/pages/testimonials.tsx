@@ -7,7 +7,7 @@ import { FC } from 'react';
 
 const TestimonialsPage: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     testimonials,
-}) => <Testimonials testimonials={testimonials} />;
+}) => <Testimonials />;
 
 export const getStaticProps: GetStaticProps<{
     testimonials: Testimonial[];
