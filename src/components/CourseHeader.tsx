@@ -2,10 +2,7 @@ const CourseHeader = ({
     category,
     title,
 }: {
-    category:
-        | 'First Aid for Mental Health'
-        | 'Mental Health Adults and Children'
-        | 'Health And Safety';
+    category: string;
     title: string;
 }) => (
     <div className='mx-auto max-w-prose text-base lg:max-w-none'>

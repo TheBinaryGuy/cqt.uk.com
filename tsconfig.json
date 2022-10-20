@@ -12,7 +12,7 @@
             "@/utils/*": ["src/utils/*"],
             "@/models/*": ["src/models/*"],
             "@/schemas/*": ["src/schemas/*"],
-            "@/src/*": ["src/*"]
+            "@/*": ["src/*"]
         },
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],

@@ -1,10 +1,15 @@
 import Sutton from '@/assets/images/logos/Sutton.png';
-import Courses from '@/components/Courses';
+import Courses, { GetCourses } from '@/components/Courses';
 import { Hero } from '@/components/Hero';
 import { Testimonial } from '@/components/Testimonial';
 import Testimonials from '@/components/Testimonials';
+import { CoursesPageQuery } from '@/schemas/sanity-types';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { FC } from 'react';
 
-const Index = () => (
+const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+    coursesPage,
+}) => (
     <>
         <Hero />
         <Testimonial
@@ -21,11 +26,30 @@ const Index = () => (
                 Helpful and Educational.”
             </p>
         </Testimonial>
-        <Courses />
+        <Courses coursesPage={coursesPage} />
         <Testimonials />
     </>
 );
 
-Index.pageTitle = 'Home';
+export const getStaticProps: GetStaticProps<{
+    coursesPage: CoursesPageQuery;
+}> = async () => {
+    const coursesPage = await GetCourses();
+
+    if (!coursesPage || !coursesPage.categories) {
+        return {
+            notFound: true,
+            revalidate: 10800,
+        };
+    }
+
+    return {
+        props: {
+            coursesPage,
+            pageTitle: 'Home',
+        },
+        revalidate: 10800,
+    };
+};
 
 export default Index;

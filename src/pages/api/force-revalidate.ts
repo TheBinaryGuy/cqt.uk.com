@@ -9,7 +9,10 @@ const handler: NextApiHandler = (req, res) => {
         return;
     }
 
-    if (secret !== process.env.NEXT_PREVIEW_TOKEN) {
+    if (
+        secret !== process.env.NEXT_PREVIEW_TOKEN ||
+        process.env.NODE_ENV !== 'development'
+    ) {
         return res.status(401).json({ message: 'Invalid token' });
     }
 

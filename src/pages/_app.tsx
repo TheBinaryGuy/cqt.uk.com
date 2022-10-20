@@ -5,6 +5,7 @@ import Loading from '@/components/loading';
 import SEO from '@/components/SEO';
 import appData from '@/data/appData';
 import '@/styles/globals.css';
+import { PortableTextComponentsProvider } from '@portabletext/react';
 import { NextComponentType, NextPageContext } from 'next';
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useRouter } from 'next/router';
@@ -58,7 +59,12 @@ const App: React.FC<Props> = ({ Component, pageProps }) => {
     }, [router.events]);
 
     return (
-        <>
+        <PortableTextComponentsProvider
+            components={{
+                types: {
+                    break: () => <hr />,
+                },
+            }}>
             <Loading {...state} />
             <AppHead />
             <SEO
@@ -76,7 +82,7 @@ const App: React.FC<Props> = ({ Component, pageProps }) => {
             <GoogleAnalytics
                 measurementId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
             />
-        </>
+        </PortableTextComponentsProvider>
     );
 };
 

@@ -4,6 +4,7 @@ const nextConfig = {
     images: {
         domains: [
             'dummyimage.com',
+            'cdn.sanity.io',
             process.env.NEXT_PUBLIC_DOMAIN ?? 'cqt.uk.com',
             process.env.NEXT_PUBLIC_VERCEL_URL ?? 'cqt.uk.com',
         ],

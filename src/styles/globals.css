@@ -25,4 +25,8 @@
     #__next {
         @apply min-h-full;
     }
+
+    ul, .prose ul {
+        @apply marker:text-black;
+    }
 }
