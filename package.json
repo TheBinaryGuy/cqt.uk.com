@@ -52,7 +52,7 @@
         "@tailwindcss/line-clamp": "^0.4.2",
         "@tailwindcss/typography": "^0.5.7",
         "@types/flickity": "^2.2.7",
-        "@types/node": "^18.7.16",
+        "@types/node": "^18.11.4",
         "@types/nodemailer": "^6.4.6",
         "@types/qs": "^6.9.7",
         "@types/react": "^18.0.21",
