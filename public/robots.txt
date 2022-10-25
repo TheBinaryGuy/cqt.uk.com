@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://cqt.uk.com
-
-# Sitemaps
-Sitemap: https://cqt.uk.com/sitemap.xml

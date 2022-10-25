@@ -4,12 +4,6 @@ import { NextApiHandler, NextApiRequest } from 'next';
 const sanitySecret = process.env.SANITY_WEBHOOK_SECRET ?? '';
 
 const handler: NextApiHandler = async (req, res) => {
-    if (req.method !== 'POST') {
-        res.status(405);
-        res.end('405 Method Not Allowed');
-        return;
-    }
-
     const signature = req.headers[SIGNATURE_HEADER_NAME];
 
     const body = await readBody(req); // Read the body into a string
