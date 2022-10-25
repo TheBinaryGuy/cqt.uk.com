@@ -1,5 +1,9 @@
 import { contactSchema } from '@/schemas/contact';
-import { MailIcon, PhoneIcon, RefreshIcon } from '@heroicons/react/outline';
+import {
+    ArrowPathIcon,
+    InboxIcon,
+    PhoneIcon,
+} from '@heroicons/react/24/outline';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -201,7 +205,7 @@ const Contact = () => {
                                     <span className='sr-only'>Email</span>
                                 </dt>
                                 <dd className='flex text-base text-indigo-50'>
-                                    <MailIcon
+                                    <InboxIcon
                                         className='h-6 w-6 flex-shrink-0 text-indigo-200'
                                         aria-hidden='true'
                                     />
@@ -474,7 +478,7 @@ const Contact = () => {
                                             disabled={submitting}
                                             className='mt-2 inline-flex w-full items-center justify-center gap-2 rounded-md border border-transparent bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/90 focus:ring-offset-2 disabled:cursor-not-allowed disabled:bg-gray-500 sm:w-auto'>
                                             <span>Submit</span>
-                                            <RefreshIcon
+                                            <ArrowPathIcon
                                                 className={`h-4 animate-spin ${
                                                     submitting
                                                         ? 'block'
