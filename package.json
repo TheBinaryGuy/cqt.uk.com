@@ -19,7 +19,7 @@
     },
     "dependencies": {
         "@headlessui/react": "^1.7.3",
-        "@heroicons/react": "^2.0.12",
+        "@heroicons/react": "^2.0.13",
         "@hookform/resolvers": "^2.9.10",
         "@portabletext/react": "^1.0.6",
         "@sanity/webhook": "^2.0.0",
