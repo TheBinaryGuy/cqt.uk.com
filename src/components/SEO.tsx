@@ -16,34 +16,19 @@ const SEO: React.FC<SEOProps> = ({ title, desc, img }) => {
                 property='og:description'
                 content={desc ?? appData.description}
             />
-            <meta
-                property='og:title'
-                content={
-                    title
-                        ? `${title} | ${appData.name} - ${appData.seoTitle}`
-                        : appData.name
-                }
-            />
+            <meta property='og:title' content={title ?? appData.name} />
             <meta
                 name='twitter:description'
                 content={desc ?? appData.description}
             />
             <meta
                 name='twitter:title'
-                content={
-                    title
-                        ? `${title} | ${appData.name} - ${appData.seoTitle}`
-                        : `${appData.name} - ${appData.seoTitle}`
-                }
+                content={title ?? `${appData.name} - ${appData.seoTitle}`}
             />
 
             <meta property='og:image' content={img ?? appData.ogImg} />
 
-            <title>
-                {title
-                    ? `${title} | ${appData.name} - ${appData.seoTitle}`
-                    : `${appData.name} - ${appData.seoTitle}`}
-            </title>
+            <title>{title ?? `${appData.name} - ${appData.seoTitle}`}</title>
         </Head>
     );
 };

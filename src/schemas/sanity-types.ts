@@ -1,3 +1,15 @@
+export interface Post {
+    _updatedAt?: string;
+    _id: string;
+    publishedAt: string;
+    body?: Body[];
+    excerpt: string;
+    category: PostCategory;
+    mainImage: Image;
+    slug: Slug;
+    title: string;
+}
+
 export interface Course {
     _id: string;
     body?: Body[];
@@ -106,6 +118,16 @@ interface DarkMuted {
     background: string;
     foreground: string;
     population: number;
+    title: string;
+}
+
+interface PostCategory {
+    _createdAt: string;
+    _id: string;
+    _rev: string;
+    _type: string;
+    _updatedAt: string;
+    slug: Slug;
     title: string;
 }
 

@@ -2,16 +2,6 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@/components/*": ["src/components/*"],
-            "@/styles/*": ["src/styles/*"],
-            "@/interfaces/*": ["src/interfaces/*"],
-            "@/assets/*": ["src/assets/*"],
-            "@/images/*": ["src/images/*"],
-            "@/data/*": ["src/data/*"],
-            "@/stores/*": ["src/stores/*"],
-            "@/utils/*": ["src/utils/*"],
-            "@/models/*": ["src/models/*"],
-            "@/schemas/*": ["src/schemas/*"],
             "@/*": ["src/*"]
         },
         "target": "es5",

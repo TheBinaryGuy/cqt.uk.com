@@ -7,6 +7,7 @@ import appData from '@/data/appData';
 import '@/styles/globals.css';
 import { PortableTextComponentsProvider } from '@portabletext/react';
 import { NextComponentType, NextPageContext } from 'next';
+import { Session } from 'next-auth';
 import type { AppProps, NextWebVitalsMetric } from 'next/app';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -15,6 +16,7 @@ type SEOProps = {
     pageTitle?: string;
     pageDesc?: string;
     pageImg?: string;
+    session?: Session | null;
 };
 
 interface Props extends AppProps<SEOProps> {
@@ -23,7 +25,10 @@ interface Props extends AppProps<SEOProps> {
     } & SEOProps;
 }
 
-const App: React.FC<Props> = ({ Component, pageProps }) => {
+const App: React.FC<Props> = ({
+    Component,
+    pageProps: { session, ...pageProps },
+}) => {
     const getFinalLayout = Component.getLayout || getLayout;
     const router = useRouter();
     const [state, setState] = useState({
@@ -78,7 +83,7 @@ const App: React.FC<Props> = ({ Component, pageProps }) => {
                 }
                 img={pageProps.pageImg ?? Component.pageImg ?? appData.ogImg}
             />
-            {getFinalLayout(<Component {...pageProps} />)}
+            {getFinalLayout(<Component {...pageProps} />, session)}
             <GoogleAnalytics
                 measurementId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
             />
