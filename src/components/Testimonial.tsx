@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/future/image';
+import Image, { StaticImageData } from "next/image";
 
 import { GridPattern } from '@/components/GridPattern';
 import { StarRating } from '@/components/StarRating';

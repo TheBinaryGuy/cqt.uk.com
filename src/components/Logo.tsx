@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from "next/image";
 
 import logo from '@/assets/images/cqt-mark.png';
 

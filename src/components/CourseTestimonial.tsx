@@ -1,5 +1,5 @@
 import { Testimonial } from '@/schemas/sanity-types';
-import Image from 'next/future/image';
+import Image from "next/image";
 import { FC } from 'react';
 
 const CourseTestimonial: FC<{ testimonial: Testimonial }> = ({

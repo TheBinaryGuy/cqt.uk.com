@@ -2,7 +2,7 @@ import { client } from '@/clients/sanity-client';
 import { Course, CoursesPageQuery } from '@/schemas/sanity-types';
 import clsx from 'clsx';
 import groq from 'groq';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 

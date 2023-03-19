@@ -1,5 +1,5 @@
 import { Post } from '@/schemas/sanity-types';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 

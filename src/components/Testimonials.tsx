@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import Image, { StaticImageData } from 'next/future/image';
+import Image, { StaticImageData } from "next/image";
 
 import ActiveProspects from '@/assets/images/logos/Active-Prospects.png';
 import KAMPC from '@/assets/images/logos/KAM-Project-Consultants.png';
