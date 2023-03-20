@@ -5,9 +5,11 @@ import { Fragment } from 'react';
 
 import { Logo } from '@/components/Logo';
 import { signIn, signOut, useSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 const MobileNavigation = () => {
     const session = useSession();
+    const { pathname } = useRouter();
 
     return (
         <Popover>
@@ -133,6 +135,14 @@ const MobileNavigation = () => {
                                                 session.status ===
                                                 'unauthenticated'
                                             ) {
+                                                if (pathname === '/login') {
+                                                    signIn(undefined, {
+                                                        callbackUrl: '/',
+                                                    });
+                                                    close();
+                                                    return;
+                                                }
+
                                                 signIn();
                                                 close();
                                             }
@@ -155,6 +165,7 @@ const MobileNavigation = () => {
 
 export const Header = () => {
     const session = useSession();
+    const { pathname } = useRouter();
 
     return (
         <header className='py-10'>
@@ -229,7 +240,13 @@ export const Header = () => {
                                     }
 
                                     if (session.status === 'unauthenticated') {
-                                        signIn();
+                                        if (pathname === '/login') {
+                                            signIn(undefined, {
+                                                callbackUrl: '/',
+                                            });
+                                        } else {
+                                            signIn();
+                                        }
                                     }
                                 }}
                                 className='group inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold text-white hover:bg-primary/90 hover:text-slate-100 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/90 active:bg-primary/90 active:text-blue-100'>
