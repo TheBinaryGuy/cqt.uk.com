@@ -30,12 +30,8 @@ export const authOptions: AuthOptions = {
     ],
     callbacks: {
         async signIn({ profile }) {
-            if (
-                !profile ||
-                !('email_verified' in profile) ||
-                !profile.email_verified
-            ) {
-                return false;
+            if (!profile) {
+                throw new Error('Profile not found!');
             }
 
             const attendee = await client.fetch(
@@ -43,8 +39,15 @@ export const authOptions: AuthOptions = {
                 { email: profile.email }
             );
 
-            return attendee !== undefined;
+            if (!attendee) {
+                throw new Error('You are not authorized!');
+            }
+
+            return true;
         },
+    },
+    pages: {
+        error: '/auth/error',
     },
 };
 
