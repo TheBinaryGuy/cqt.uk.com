@@ -7,7 +7,7 @@ export const Footer = () => (
             <div className='py-16'>
                 <Logo className='mx-auto h-10 w-auto' />
                 <nav className='mt-10 text-sm' aria-label='quick links'>
-                    <ul className='-my-1 flex justify-center space-x-6'>
+                    <ul className='-my-1 grid grid-cols-2 gap-6 md:flex md:justify-center'>
                         <li>
                             <Link
                                 href='/courses'
@@ -17,16 +17,16 @@ export const Footer = () => (
                         </li>
                         <li>
                             <Link
-                                href='/testimonials'
+                                href='/blog'
                                 className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Testimonials
+                                Blog
                             </Link>
                         </li>
                         <li>
                             <Link
-                                href='/faq'
+                                href='/testimonials'
                                 className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                FAQ
+                                Testimonials
                             </Link>
                         </li>
                         <li>

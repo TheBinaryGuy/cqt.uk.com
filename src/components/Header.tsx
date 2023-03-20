@@ -105,14 +105,6 @@ const MobileNavigation = () => {
                                         Contact
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link
-                                        href='/terms'
-                                        className='block w-full'
-                                        onClick={() => close()}>
-                                        Terms
-                                    </Link>
-                                </li>
                                 {session.status === 'authenticated' && (
                                     <li>
                                         <Link
@@ -215,13 +207,6 @@ export const Header = () => {
                                 href='/contact'
                                 className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
                                 Contact
-                            </Link>
-                        </li>
-                        <li className='ml-6 hidden lg:block'>
-                            <Link
-                                href='/terms'
-                                className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Terms
                             </Link>
                         </li>
                         {session.status === 'authenticated' && (
