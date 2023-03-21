@@ -1,18 +1,19 @@
 import Sutton from '@/assets/images/logos/Sutton.png';
 import Courses, { GetCourses } from '@/components/Courses';
 import { Hero } from '@/components/Hero';
-import { Testimonial } from '@/components/Testimonial';
-import Testimonials from '@/components/Testimonials';
-import { CoursesPageQuery } from '@/schemas/sanity-types';
+import { Testimonial as TestimonialComponent } from '@/components/Testimonial';
+import Testimonials, { GetTestimonials } from '@/components/Testimonials';
+import { CoursesPageQuery, Testimonial } from '@/schemas/sanity-types';
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { FC } from 'react';
 
 const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     coursesPage,
+    testimonials,
 }) => (
     <>
         <Hero />
-        <Testimonial
+        <TestimonialComponent
             id='london-borough-sutton-council-hero'
             author={{
                 name: 'London Borough Sutton Council',
@@ -25,16 +26,18 @@ const Index: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
                 daily basis. I will use strategies with young people. Very
                 Helpful and Educational.”
             </p>
-        </Testimonial>
+        </TestimonialComponent>
         <Courses coursesPage={coursesPage} />
-        <Testimonials />
+        <Testimonials testimonials={testimonials} />
     </>
 );
 
 export const getStaticProps: GetStaticProps<{
     coursesPage: CoursesPageQuery;
+    testimonials: Testimonial[] | null;
 }> = async () => {
     const coursesPage = await GetCourses();
+    const testimonials = await GetTestimonials();
 
     if (!coursesPage || !coursesPage.categories) {
         return {
@@ -46,6 +49,7 @@ export const getStaticProps: GetStaticProps<{
     return {
         props: {
             coursesPage,
+            testimonials,
             pageTitle: 'Home',
         },
         revalidate: 10800,

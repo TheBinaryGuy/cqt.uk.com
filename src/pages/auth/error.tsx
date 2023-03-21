@@ -1,6 +1,4 @@
 import { useRouter } from 'next/router';
-import React from 'react';
-
 export default function Error() {
     const { query } = useRouter();
 

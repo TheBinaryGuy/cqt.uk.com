@@ -1,9 +1,6 @@
 import { client } from '@/clients/sanity-client';
-import CourseCTA from '@/components/CourseCTA';
-import CourseHeader from '@/components/CourseHeader';
-import CourseTestimonial from '@/components/CourseTestimonial';
 import PostHeader from '@/components/PostHeader';
-import { Course, Post, Slug } from '@/schemas/sanity-types';
+import { Post, Slug } from '@/schemas/sanity-types';
 import { PortableText } from '@portabletext/react';
 import groq from 'groq';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
@@ -51,6 +48,7 @@ export const getStaticProps: GetStaticProps<{
     if (!post) {
         return {
             notFound: true,
+            revalidate: 10800,
         };
     }
 
@@ -61,6 +59,7 @@ export const getStaticProps: GetStaticProps<{
             pageDesc: post.excerpt,
             pageImg: post.mainImage.asset.url,
         },
+        revalidate: 10800,
     };
 };
 

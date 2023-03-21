@@ -125,6 +125,7 @@ export const getStaticProps: GetStaticProps<{
     if (!post) {
         return {
             notFound: true,
+            revalidate: 10800,
         };
     }
 
@@ -135,6 +136,7 @@ export const getStaticProps: GetStaticProps<{
             pageDesc: post.excerpt,
             pageImg: post.main_image.asset.url,
         },
+        revalidate: 10800,
     };
 };
 

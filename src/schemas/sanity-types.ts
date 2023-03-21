@@ -1,5 +1,14 @@
+export interface Resource {
+    _updatedAt: string;
+    _id: string;
+    excerpt: string;
+    mainImage: Image;
+    url: string;
+    title: string;
+}
+
 export interface Post {
-    _updatedAt?: string;
+    _updatedAt: string;
     _id: string;
     publishedAt: string;
     body?: Body[];
