@@ -107,16 +107,14 @@ const MobileNavigation = () => {
                                         Contact
                                     </Link>
                                 </li>
-                                {session.status === 'authenticated' && (
-                                    <li>
-                                        <Link
-                                            href='/resources'
-                                            className='block w-full'
-                                            onClick={() => close()}>
-                                            Resources
-                                        </Link>
-                                    </li>
-                                )}
+                                <li>
+                                    <Link
+                                        href='/resources'
+                                        className='block w-full'
+                                        onClick={() => close()}>
+                                        Resources
+                                    </Link>
+                                </li>
                                 <li>
                                     <button
                                         type='button'
@@ -220,15 +218,13 @@ export const Header = () => {
                                 Contact
                             </Link>
                         </li>
-                        {session.status === 'authenticated' && (
-                            <li className='ml-6 hidden lg:block'>
-                                <Link
-                                    href='/resources'
-                                    className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                    Resources
-                                </Link>
-                            </li>
-                        )}
+                        <li className='ml-6 hidden lg:block'>
+                            <Link
+                                href='/resources'
+                                className='rounded-lg py-1 px-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
+                                Resources
+                            </Link>
+                        </li>
                         <li className='ml-auto hidden lg:block'>
                             <button
                                 type='button'
