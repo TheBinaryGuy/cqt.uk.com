@@ -4,56 +4,12 @@ import Link from 'next/link';
 export const Footer = () => (
     <footer className='bg-slate-50'>
         <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-            <div className='py-16'>
+            <div className='flex flex-col-reverse items-center gap-8 border-t border-slate-400/10 py-10 md:flex-row md:justify-between'>
+                <p className='text-sm text-slate-500 sm:mt-0'>
+                    Copyright &copy; {new Date().getFullYear()} CQT. All rights
+                    reserved.
+                </p>
                 <Logo className='mx-auto h-10 w-auto' />
-                <nav className='mt-10 text-sm' aria-label='quick links'>
-                    <ul className='-my-1 grid grid-cols-2 gap-6 md:flex md:justify-center'>
-                        <li>
-                            <Link
-                                href='/courses'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Courses
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/blog'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Blog
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/testimonials'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Testimonials
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/about'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/contact'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Contact
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href='/terms'
-                                className='rounded-lg px-2 py-1 text-slate-700 hover:bg-slate-100 hover:text-slate-900'>
-                                Terms
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div className='flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between'>
                 <div className='flex space-x-6'>
                     <Link
                         href='https://twitter.com/CQT_bbw'
@@ -144,10 +100,6 @@ export const Footer = () => (
                         </svg>
                     </Link>
                 </div>
-                <p className='mt-6 text-sm text-slate-500 sm:mt-0'>
-                    Copyright &copy; {new Date().getFullYear()} CQT. All rights
-                    reserved.
-                </p>
             </div>
         </div>
     </footer>

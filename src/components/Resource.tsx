@@ -8,21 +8,27 @@ const ResourceCard = ({ resource }: { resource: Resource }) => (
         href={resource.url}
         key={resource._id}
         target='_blank'
-        rel='noreferrer'>
-        <li>
-            <div className='overflow-hidden rounded shadow-sm'>
+        rel='noreferrer'
+        className='h-full'>
+        <li className='flex h-full flex-col'>
+            <div className='flex aspect-video overflow-hidden rounded shadow-sm'>
                 <Image
                     src={resource.mainImage.asset.url}
                     alt={resource.title}
                     width={800}
                     height={450}
+                    className='object-cover'
                     blurDataURL={resource.mainImage.asset.metadata.blurHash}
                 />
             </div>
-            <h3 className='mt-4 text-base font-medium tracking-tight text-slate-900'>
-                {resource.title}
-            </h3>
-            <p className='mt-2 text-sm text-slate-600'>{resource.excerpt}</p>
+            <div className='flex-auto'>
+                <h3 className='mt-4 flex-auto text-base font-medium tracking-tight text-slate-900'>
+                    {resource.title}
+                </h3>
+                <p className='mt-2 text-sm text-slate-600'>
+                    {resource.excerpt}
+                </p>
+            </div>
         </li>
     </Link>
 );

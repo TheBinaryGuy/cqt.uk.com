@@ -4,21 +4,24 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 const PostCard = ({ post }: { post: Post }) => (
-    <Link href={`/blog/${post.slug.current}`} key={post._id}>
-        <li>
-            <div className='flex overflow-hidden rounded shadow-sm'>
+    <Link href={`/blog/${post.slug.current}`} key={post._id} className='h-full'>
+        <li className='flex h-full flex-col'>
+            <div className='flex aspect-video overflow-hidden rounded shadow-sm'>
                 <Image
                     src={post.mainImage.asset.url}
                     alt={post.title}
                     width={800}
                     height={450}
+                    className='object-cover'
                     blurDataURL={post.mainImage.asset.metadata.blurHash}
                 />
             </div>
-            <h3 className='mt-4 text-base font-medium tracking-tight text-slate-900'>
-                {post.title}
-            </h3>
-            <p className='mt-2 text-sm text-slate-600'>{post.excerpt}</p>
+            <div className='flex-auto'>
+                <h3 className='mt-4 text-base font-medium tracking-tight text-slate-900'>
+                    {post.title}
+                </h3>
+                <p className='mt-2 text-sm text-slate-600'>{post.excerpt}</p>
+            </div>
         </li>
     </Link>
 );
