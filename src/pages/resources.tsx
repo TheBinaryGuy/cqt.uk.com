@@ -21,7 +21,7 @@ export const getServerSideProps: GetServerSideProps<{
     if (!session) {
         return {
             redirect: {
-                destination: `/api/auth/signin?callbackUrl=${ctx.req.url}`,
+                destination: `/api/auth/signin?callbackUrl=${ctx.resolvedUrl}`,
             },
             props: { resources: [] },
         };
