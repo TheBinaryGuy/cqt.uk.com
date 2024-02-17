@@ -195,8 +195,8 @@ const Contact = () => {
                                             aria-hidden='true'
                                         />
                                         <span className='ml-3'>
-                                            <Link href='tel:07543 879 415'>
-                                                07543 879 415
+                                            <Link href='tel:07874379274'>
+                                                07874 379 274
                                             </Link>
                                         </span>
                                     </div>
